@@ -1,0 +1,15 @@
+# TextDNA — Python dependencies
+# Install with:  pip install -r requirements.txt
+# Then run:      python -m spacy download en_core_web_sm
+ 
+spacy>=3.7,<4.0
+textstat>=0.7.3
+sentence-transformers>=2.7.0
+transformers>=4.40.0
+torch>=2.2.0                # CPU build is fine; MPS/CUDA give a 5–10× speedup
+scikit-learn>=1.4.0
+numpy>=1.26.0
+rich>=13.7.0
+ 
+# Optional — uncomment if you want GPU acceleration on Apple Silicon
+# torch==2.2.0  (already included above)
